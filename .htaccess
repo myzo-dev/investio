@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Serve directly if request is -f (folder), -d (directory)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Forward to index.php
+RewriteRule ^(.*)$ index.php [L,QSA]
