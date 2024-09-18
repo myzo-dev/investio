@@ -69,4 +69,24 @@
 	.section-offset-bottom {
 		@apply pb-120 xl:pb-160;
 	}
+
+	.button {
+		@apply px-[28px] py-[12px] text-sm font-semibold rounded-8 text-center transition-colors;
+	}
+
+	.button-primary {
+		@apply bg-primary-300 hover:bg-primary-200;
+	}
+
+    .input {
+        @apply py-8 lg:py-[12px] border-b border-neutral-600 rounded-8 outline-none bg-neutral-900;
+    }
+
+    .input:focus {
+        @apply ring-0 border-primary-300;
+    }
+
+    .input::placeholder {
+        @apply text-neutral-100;
+    }
 }
