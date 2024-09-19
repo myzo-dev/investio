@@ -9,7 +9,7 @@ export const createInvestmentsItem = (investment: Investment, sum: number): HTML
             <form class="investments-form-edit hidden justify-between md:items-center flex-col md:flex-row">
                 <div class="gap-8 flex items-center">
                     <input class="p-0 w-full text-subheading font-semibold border-none rounded-4 bg-neutral-600" type="text" name="name" value="${investment.name}" required>
-                    <input class="px-6 w-full py-2 rounded-4 border-none" type="number" name="value" value="${investment.value}" style="background-color: ${investment.color};" required>
+                    <input class="px-6 w-full py-2 text-sm rounded-4 border-none" type="number" name="value" value="${investment.value}" style="background-color: ${investment.color};" required>
                 </div>
 
                 <aside class="mt-16 md:mt-0">
@@ -45,6 +45,8 @@ export const createInvestmentsItem = (investment: Investment, sum: number): HTML
 const investmentsSectionList = document.querySelector('.investments-section-list') as HTMLUListElement
 
 export const renderInvestmentsList = (investments: Investment[]) => {
+	if (!investmentsSectionList) return
+
 	renderGraph()
 
 	investments.forEach((investment) => {

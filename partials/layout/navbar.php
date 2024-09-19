@@ -10,8 +10,12 @@
             </li>
 
             <li>
-                <a class="font-semibold uppercase text-xs md:text-sm" href="https://github.com/myzo-dev" target="_blank">Source</a>
+                <a class="font-semibold uppercase text-xs md:text-sm" href="/contact">Kontakt</a>
             </li>
+
+            <!-- <li>
+                <a class="font-semibold uppercase text-xs md:text-sm" href="https://github.com/myzo-dev" target="_blank">Source</a>
+            </li> -->
         </ul>
     </div>
 </nav>

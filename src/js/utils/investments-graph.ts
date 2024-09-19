@@ -6,6 +6,8 @@ let chart: any = null
 const renderGraph = () => {
 	const graphElement = document.getElementById('investments-chart') as HTMLCanvasElement
 
+	if (!graphElement) return
+
 	const data = {
 		datasets: [
 			{

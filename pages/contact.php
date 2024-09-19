@@ -4,10 +4,8 @@
     ob_start();
 ?>
 
-<section class="container gap-16 grid grid-cols-12">
-    <form action="">
-        <input type="text">
-    </form>
+<section class="container section-offset">
+    <h2>Čoskoro</h2>
 </section>
 
 <?php

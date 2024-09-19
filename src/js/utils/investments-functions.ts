@@ -13,7 +13,9 @@ export let investmentsChartData: InvestmentChartData = getInvestmentsChartData(i
 const investmentsSectionList = document.querySelector('.investments-section-list') as HTMLUListElement
 const investmentsSectionSum = document.querySelector('.investments-section-sum') as HTMLElement
 
-investmentsSectionSum.textContent = `${investmentsSum.toString()}€`
+if (investmentsSectionSum) {
+	investmentsSectionSum.textContent = `${investmentsSum.toString()}€`
+}
 
 function updateInvestmentsList(newInvestments: Investment[]) {
 	investments = newInvestments
