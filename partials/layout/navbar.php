@@ -6,11 +6,11 @@
 
         <ul class="space-x-32 flex items-center">
             <li>
-                <a href="/">Domov</a>
+                <a class="font-semibold uppercase text-sm" href="/">Domov</a>
             </li>
 
             <li>
-                <a href="/contact">Contact</a>
+                <a class="font-semibold uppercase text-sm" href="https://github.com/myzo-dev" target="_blank">Source</a>
             </li>
         </ul>
     </div>

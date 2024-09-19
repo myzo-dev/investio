@@ -1,7 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-	content: ['./layouts/**/*.php', './pages/**/*.php', './partials/**/*.php', './src/**/*.js'],
+	content: ['./layouts/**/*.php', './pages/**/*.php', './partials/**/*.php', './src/**/*.ts'],
 	theme: {
 		extend: {
 			zIndex: {
@@ -53,6 +53,7 @@ module.exports = {
 
 		spacing: {
 			unset: 'unset',
+			none: 'none',
 			0: 0,
 			1: '0.063rem',
 			2: '0.125rem',
