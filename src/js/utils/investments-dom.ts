@@ -12,8 +12,9 @@ export const createInvestmentsItem = (investment: Investment, sum: number): HTML
                     <input class="px-6 w-full py-2 text-sm rounded-4 border-none" type="number" name="value" value="${investment.value}" style="background-color: ${investment.color};" required>
                 </div>
 
-                <aside class="mt-16 md:mt-0">
+                <aside class="space-x-8 mt-16 md:mt-0 flex">
                     <button class="px-8 py-4 w-full text-xs md:text-sm rounded-4 bg-neutral-500 hover:bg-neutral-400 transition-colors" type="submit">Uložiť</button>
+                    <button class="cancel-button px-8 py-4 w-full text-xs md:text-sm rounded-4 bg-neutral-500 hover:bg-neutral-400 transition-colors" type="button">Zrušiť</button>
                 </aside>
             </form>
 
@@ -46,8 +47,6 @@ const investmentsSectionList = document.querySelector('.investments-section-list
 
 export const renderInvestmentsList = (investments: Investment[]) => {
 	if (!investmentsSectionList) return
-
-	renderGraph()
 
 	investments.forEach((investment) => {
 		const element = createInvestmentsItem(investment, investmentsSum) as HTMLLIElement
@@ -100,6 +99,15 @@ export const renderInvestmentsList = (investments: Investment[]) => {
 			updateInvestment(updatedInvestment)
 		})
 
+		const cancelEditButton = element.querySelector('.cancel-button') as HTMLButtonElement
+
+		cancelEditButton.addEventListener('click', () => {
+			toggleFormAndData()
+			formEdit.reset()
+		})
+
 		investmentsSectionList.appendChild(element)
 	})
+
+	renderGraph()
 }
