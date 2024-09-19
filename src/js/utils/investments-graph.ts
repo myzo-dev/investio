@@ -9,6 +9,7 @@ const renderGraph = () => {
 	const data = {
 		datasets: [
 			{
+				label: 'Hodnota v (€)',
 				data: investmentsChartData.values,
 				backgroundColor: investmentsChartData.colors,
 			},
