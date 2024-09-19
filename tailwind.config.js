@@ -39,10 +39,10 @@ module.exports = {
 			},
 		},
 
-		// fontFamily: {
-		// 	heading: ['ClashDisplay', 'sans-serif'],
-		// 	body: ['Nunito', 'sans-serif'],
-		// },
+		fontFamily: {
+			heading: ['ClashDisplay', 'sans-serif'],
+			body: ['Nunito', 'sans-serif'],
+		},
 
 		fontSize: {
 			xs: ['0.75rem', '160%'],

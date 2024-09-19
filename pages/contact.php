@@ -1,6 +1,6 @@
 <?php
-    $title = "Domov";
-    $description = "No jak by ňe";
+    $title = "Kontakt";
+    $description = "Kontakt";
     ob_start();
 ?>
 
