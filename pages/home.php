@@ -33,7 +33,7 @@
     <form class="investments-form space-y-8 max-w-[1000px]">
         <input class="input" type="text" name="name" placeholder="Názov" required>
         <input class="input" type="number" name="value" placeholder="Suma (€)" min="0" required>
-        <button class="button button-primary mt-16 w-full" type="submit">Submit</button>
+        <button class="button button-primary mt-16 w-full" type="submit">Vytvoriť</button>
     </form>
 </section>
 

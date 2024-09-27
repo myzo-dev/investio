@@ -30,7 +30,7 @@ export const createInvestmentsItem = (investment: Investment, sum: number): HTML
                 
                 <aside class="space-x-8 mt-16 md:mt-0 flex">
                     <button class="edit-button px-8 py-4 w-full text-xs md:text-sm rounded-4 bg-neutral-500 hover:bg-neutral-400 transition-colors" type="button">Upraviť</button>
-                    <button class="delete-button px-8 py-4 w-full text-xs md:text-sm rounded-4 bg-[#ec6b8a] hover:bg-[#f296ac] transition-colors" type="button">Vymazať</button>
+                    <button class="delete-button px-8 py-4 w-full text-xs md:text-sm rounded-4 bg-[#e93737] hover:bg-[#e64747] transition-colors" type="button">Vymazať</button>
                 </aside>
             </div>
         </li>
